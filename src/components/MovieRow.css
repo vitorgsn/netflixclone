@@ -14,9 +14,9 @@
     padding-left: 30px;
 }
 
-/*tamanho dos itens da lista*/
+/*transição dos itens da lista pros lados*/
 .movieRow--list {
-    width: 99999999px;
+    transition: all ease 0.5s;
 }
 
 /*itens alinhados*/
@@ -65,4 +65,11 @@
 .movieRow:hover .movieRow--left,
 .movieRow:hover .movieRow--right {
     opacity: 1;
+}
+
+@media (max-width:760px) {
+    .movieRow--left,
+    .movieRow--right {
+        opacity: 1;
+    }
 }
